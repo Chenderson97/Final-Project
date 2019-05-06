@@ -193,7 +193,7 @@ function calc(){
         ogpa = ogpa + getGrade(bis10);
         bgpa = bgpa + getGrade(bis10);
     }
-    if (bis011 != "-") {
+    if (bis11 != "-") {
         ocount = ocount + 1;
         bcount = bcount + 1;
         ogpa = ogpa + getGrade(bis11);
@@ -307,14 +307,7 @@ function calc(){
         bgpa = bgpa + getGrade(maj12);
         mgpa = mgpa + getGrade(maj12);
     }
-    if (maj13 != "-") {
-        ocount = ocount + 1;
-        bcount = bcount + 1;
-        mcount = mcount + 1;
-        ogpa = ogpa + getGrade(maj13);
-        bgpa = bgpa + getGrade(maj13);
-        mgpa = mgpa + getGrade(maj13);
-    }
+    
     document.getElementById("ogpa").innerText = ogpa / ocount;
     document.getElementById("bgpa").innerText = bgpa / bcount;
     document.getElementById("mgpa").innerText = mgpa / mcount;
